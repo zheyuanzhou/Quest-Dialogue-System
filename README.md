@@ -1,5 +1,5 @@
 # Quest-Dialogue-System
-Dialogue&amp;&amp;Dialogue System
+Dialogue &amp;&amp; Dialogue System
 
 Resources Link
 
@@ -9,12 +9,14 @@ Baidu Cloud: TAB
 
 解决的问题：
 
-【问题1】DM脚本调用了Talkable、QuestTarget、Questable类型，脚本之间的耦合性太乱糟糟
+【问题1】
+DM脚本调用了Talkable、QuestTarget、Questable类型，脚本之间的耦合性太乱糟糟
 【解决】
 * DM脚本只保留Talkable类型，即可说话的、可打开对话的这个脚本
 * 其余的QuestTarget、Questable类型全部通过Talkable脚本进行调用
 
-【问题2】场景切换过程中，NPC不能够保存任务是否完成
+【问题2】
+场景切换过程中，NPC不能够保存任务是否完成
 【解决】
 场景转换保存加载场景1中NPC任务状态和isFinished
 * 在离开场景1到场景2之前的SceneTransition脚本中SaveData保存数据
